@@ -7,6 +7,9 @@ import java.util.Iterator;
 
 class Student {
 	int rollno;
+	String name;
+	int age;
+	
 	public int getRollno() {
 		return rollno;
 	}
@@ -31,8 +34,7 @@ class Student {
 		this.age = age;
 	}
 
-	String name;
-	int age;
+	
 
 	Student(int rollno, String name, int age) {
 		this.rollno = rollno;
@@ -47,6 +49,7 @@ public class TestComparator {
 		ArrayList<Student> al = new ArrayList<Student>();
 		al.add(new Student(101, "Deen", 30));
 		al.add(new Student(101, "Vijay", 23));
+		al.add(new Student(107, "Ajay", 28));
 		al.add(new Student(106, "Ajay", 27));
 		al.add(new Student(105, "Jai", 21));
 
@@ -93,6 +96,14 @@ public class TestComparator {
 		System.out.println("............");
 	    Comparator<Student> cm1=Comparator.comparing(Student::getName);  
 	     Collections.sort(al,cm1);  
+	     printAll(al);
+	   
+	     System.out.println("............");
+	     System.out.println("Sorting by age and rollno");
+		 System.out.println("............");
+		 
+	     Comparator<Student> cmpInt =Comparator.comparingInt((Student s) -> s.age ).thenComparingInt((Student s) -> s.rollno);
+	     Collections.sort(al,cmpInt);
 	     printAll(al);
 	}
 
