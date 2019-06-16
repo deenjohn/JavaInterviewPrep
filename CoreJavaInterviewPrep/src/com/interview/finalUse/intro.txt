@@ -1,0 +1,11 @@
+
+https://www.javainterviewpoint.com/java-interview-questions-on-final-keyword/
+
+1) you can't subclass final class
+2) final can be used to create constants in interface.
+: Because interface constants are
+defined in an interface, they don’t have to be declared as public, 
+static, or final. They must be public, static, and final, but you 
+don’t actually have to declare them that way
+
+
