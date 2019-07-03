@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 class Student {
 	int rollno;
 	String name;
 	int age;
-	
+	static int newAge = 30 ;
 	public int getRollno() {
 		return rollno;
 	}
@@ -108,9 +109,10 @@ public class TestComparator {
 	}
 
 	private static void printAll(ArrayList<Student> al) {
-		Iterator<Student> itr2 = al.iterator();
+		ListIterator<Student> itr2 = al.listIterator();
 		while (itr2.hasNext()) {
 			Student st = (Student) itr2.next();
+
 			System.out.println(st.rollno + " " + st.name + " " + st.age);
 		}
 	}

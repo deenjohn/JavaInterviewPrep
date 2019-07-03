@@ -1,0 +1,7 @@
+
+
+https://www.mkyong.com/java8/java-8-lambda-comparator-example/
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html
+
+https://stackoverflow.com/questions/10977992/difference-between-iterator-and-listiterator

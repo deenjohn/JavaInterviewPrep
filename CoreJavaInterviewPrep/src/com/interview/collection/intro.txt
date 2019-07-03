@@ -1,0 +1,4 @@
+
+HashSet
+1)hashset has no insertion order but LinkedHashset does
+2) No duplicates
